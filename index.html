@@ -69,6 +69,48 @@
         </div>
     </div>
 
+    <div style="background:#f9fbff; margin:30px auto; padding:30px; max-width:800px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+        <h2 style="color:#1e3a8a; margin-bottom:15px; text-align:center;">
+            <i class="fas fa-envelope" style="margin-right:8px;"></i> Get in Touch
+        </h2>
+        <p style="font-size:1.1rem; color:#333; text-align:center; margin-bottom:25px;">
+            Have a project in mind? Fill out the form and I'll get back to you soon.
+        </p>
+
+        <form style="display:flex; flex-direction:column; gap:15px;">
+            <!-- Name -->
+            <input type="text" name="name" placeholder="Client Name" required 
+                style="padding:12px; border:1px solid #ccc; border-radius:8px; font-size:1rem;">
+
+            <!-- Email -->
+            <input type="email" name="email" placeholder="Email" required 
+                style="padding:12px; border:1px solid #ccc; border-radius:8px; font-size:1rem;">
+
+            <!-- Mobile -->
+            <input type="tel" name="mobile" placeholder="Mobile No" required 
+                style="padding:12px; border:1px solid #ccc; border-radius:8px; font-size:1rem;">
+
+            <!-- Project Type -->
+            <select name="project_type" required 
+                    style="padding:12px; border:1px solid #ccc; border-radius:8px; font-size:1rem; background:white;">
+                <option value="" disabled selected>Select Project Type</option>
+                <option value="portfolio">Portfolio</option>
+                <option value="ecommerce">E-commerce</option>
+                <option value="others">Others</option>
+            </select>
+
+            <!-- Description -->
+            <textarea name="description" rows="4" placeholder="Project Description" required 
+                    style="padding:12px; border:1px solid #ccc; border-radius:8px; font-size:1rem; resize:vertical;"></textarea>
+
+            <!-- Submit -->
+            <button type="submit" 
+                    style="background:#1e90ff; color:white; padding:12px; border:none; border-radius:8px; font-size:1.1rem; font-weight:bold; cursor:pointer; transition:0.3s;">
+                Submit
+            </button>
+        </form>
+    </div>
+
     <!-- Footer -->
     <footer style="background:#1e90ff; color:white; text-align:center; padding:15px; margin-top:30px;">
         <div>
